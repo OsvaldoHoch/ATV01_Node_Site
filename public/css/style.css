@@ -1,0 +1,22 @@
+.navbar {
+    background-color: brown;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+.navbar-logo {
+    text-decoration: none;
+}
+.navbar-itens {
+    display: flex;
+    flex-direction: row;
+}
+.navbar-itens li {
+    list-style: none;
+}
+.navbar-itens a {
+    width: 100%;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
