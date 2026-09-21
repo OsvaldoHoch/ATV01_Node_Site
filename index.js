@@ -21,14 +21,9 @@ app.use("/skates", SkateController);
 app.use("/pranchas", PranchaController);
 app.use("/patrocinados", PatrocinadosController);
 
-const port = 8080;
+const port = process.env.PORT || 3000;
 
-app.listen(port, (error) => {
-    // Tratando erros de inicialização
-    if (error) {
-        console.log(`Ocorreu um erro durante a inicialização. Erro: ${error}`);
-    } else {
-        console.log(`Servidor inicializado com sucesso em: http://localhost:${port}`);
-    }
+app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta ${port}`);
 });
 
