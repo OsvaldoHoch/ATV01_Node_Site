@@ -1,14 +1,18 @@
 <%- include('partials/navbar') %>
-<!DOCTYPE html>
-<html lang="pt_BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skates</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    
-</body>
-</html>
+
+    <table>
+        <tr>
+            <th width="150px">Skates</th>
+            <th>Medidas</th>
+            <th>Preço</th>
+        </tr>
+         <% Skates.forEach(Skates => { %>
+            <tr>
+                <td><div style="overflow: hidden; width: 200px; height: 200px;"><img src="<%= Skates.imagem %>" alt="" height="200px"></div></td>
+                <td><%= Skates.medidas %></td>
+                <td><%= Skates.preco %></td>
+            </tr>
+         <%})%>
+      </table>  
+
 <%- include('partials/footer') %>

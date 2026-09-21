@@ -59,14 +59,17 @@ body {
     justify-content: start;
     gap: 20px;
 }
-.header img {
+.header-background {
     position: absolute;
-    right: 300px;
+    right: 20px;
+    z-index: 1;
+    transform: rotateY(180deg);
 }
 .header-content {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    z-index: 10;
 }
 .header-content button {
     background-color: rgb(39, 45, 72);
@@ -87,6 +90,7 @@ body {
     background-color: rgb(39, 45, 72);
     padding: 20px;
     color: #fff;
+    z-index: 12;
 }
 .skate-ver-mais a {
     text-decoration: underline;
@@ -146,15 +150,18 @@ body {
     ========================================== */
 
 table {
+    
     margin: 20px;
-    background-color: rgb(39, 45, 72);
+    background-color: rgb(181, 184, 194);
     padding: 2px;
 }
 th {
     background-color: #f9f9f9;
     padding: 10px;
+    width: 150px;
 }
 td {
     background-color: #f9f9f9;
     padding: 5px;
+    text-align: center;
 }

@@ -1,27 +1,18 @@
 <%- include('partials/navbar') %>
-<!DOCTYPE html>
-<html lang="pt_BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrocinados</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    
+
     <table>
         <tr>
-            <th width="150px">Patrocinados</th>
+            <th>Patrocinados</th>
+            <th width="150px">Nome</th>
             <th>Vitórias</th>
         </tr>
          <% Patrocinados.forEach(Patrocinados => { %>
             <tr>
+                <td><div style="overflow: hidden; width: 200px; height: 200px;"><img src="<%= Patrocinados.imagem %>" alt="" width="200px"></div></td>
                 <td><%= Patrocinados.nome %></td>
                 <td><%= Patrocinados.vitorias %></td>
             </tr>
          <%})%>
       </table>
-    
-</body>
-</html>
+
 <%- include('partials/footer') %>

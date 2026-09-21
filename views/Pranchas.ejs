@@ -1,14 +1,18 @@
 <%- include('partials/navbar') %>
-<!DOCTYPE html>
-<html lang="pt_BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pranchas</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    
-</body>
-</html>
+
+    <table>
+        <tr>
+            <th width="150px">Pranchas</th>
+            <th>Medidas</th>
+            <th>Preço</th>
+        </tr>
+         <% Pranchas.forEach(Pranchas => { %>
+            <tr>
+                <td><div style="overflow: hidden; width: 200px; height: 200px;"><img src="<%= Pranchas.imagem %>" alt="" height="200px"></div></td>
+                <td><%= Pranchas.medidas %></td>
+                <td><%= Pranchas.preco %></td>
+            </tr>
+         <%})%>
+      </table>    
+
 <%- include('partials/footer') %>

@@ -3,12 +3,13 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
     const Patrocinados = [
-        {nome: "Davi Kirk", vitorias: "20"},
-        {nome: "Lucas Almeida", vitorias: "16"},
-        {nome: "Osvaldo Hoch", vitorias: "12"},
-        {nome: "Vinícius", vitorias: "8"}
+        {nome: "Davi Kirk", vitorias: "20", imagem: '/images/Davi.jpeg'},
+        {nome: "Lucas Almeida", vitorias: "14", imagem: '/images/Lucas.jpeg'},
+        {nome: "Osvaldo Hoch", vitorias: "12", imagem: '/images/Osvaldo.jpeg'},
+        {nome: "Vinícius Pinhei", vitorias: "8", imagem: '/images/Vini.jpeg'},
+        {nome: "Pedro Abner", vitorias: "14", imagem: '/images/Abner.jpeg'}
     ];
-    // Passe a variável 'Patrocinados' para o template EJS
+    // Passa a variável 'Patrocinados' para o template EJS
     res.render("Patrocinados", { Patrocinados: Patrocinados });
 });
 
