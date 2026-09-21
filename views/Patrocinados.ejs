@@ -1,4 +1,4 @@
-
+<%- include('partials/navbar') %>
 <!DOCTYPE html>
 <html lang="pt_BR">
 <head>
@@ -8,10 +8,20 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <%- include('partials/navbar') %>
     
-
-
-    <%- include('partials/footer') %>
+    <table>
+        <tr>
+            <th width="150px">Patrocinados</th>
+            <th>Vitórias</th>
+        </tr>
+         <% Patrocinados.forEach(Patrocinados => { %>
+            <tr>
+                <td><%= Patrocinados.nome %></td>
+                <td><%= Patrocinados.vitorias %></td>
+            </tr>
+         <%})%>
+      </table>
+    
 </body>
 </html>
+<%- include('partials/footer') %>

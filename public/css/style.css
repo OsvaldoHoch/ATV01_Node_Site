@@ -1,11 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ /* ==========================================
+    NAVBAR                      
+    ========================================== */
 .navbar {
-    background-color: brown;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: rgb(39, 45, 72);
+    padding: 25px;
     color: #fff;
     display: flex;
     flex-direction: row;
 }
 .navbar-logo {
+    position: relative;
     text-decoration: none;
+    width: 100px;
+}
+.navbar-logo img {
+    position: absolute;
+    left: -25px;
+    top: -17.5px;
+    width: 100px;
 }
 .navbar-itens {
     display: flex;
@@ -19,4 +43,118 @@
     padding: 20px;
     text-decoration: none;
     color: #fff;
+}
+
+/* ========================================== 
+    HEADER
+    ========================================== */
+.header {
+    position: relative;
+    margin: 20px 0;
+    padding: 0 30px;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+.header img {
+    position: absolute;
+    right: 300px;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.header-content button {
+    background-color: rgb(39, 45, 72);
+    color: #fff;
+    border: 1px solid rgb(54, 71, 145);
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 300px;
+    font-size: 20px;
+}
+
+
+/* ========================================== 
+    SKATESHOP
+    ========================================== */
+.skateshop {
+    margin-top: 20px;
+    background-color: rgb(39, 45, 72);
+    padding: 20px;
+    color: #fff;
+}
+.skate-ver-mais a {
+    text-decoration: underline;
+    color: #fff;
+}
+.skate-ver-mais {
+    margin-bottom: 20px;
+}
+.skate-imgs {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.skate-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.skate-img img {
+    width: 300px;
+}
+
+/* ========================================== 
+    SURFSHOP
+    ========================================== */
+.Surfshop {
+    margin-bottom: 20px;
+    background-color: rgb(39, 45, 72);
+    padding: 20px;
+    color: #fff;
+}
+.surf-ver-mais a {
+    text-decoration: underline;
+    color: #fff;
+}
+.surf-ver-mais {
+    margin-bottom: 20px;
+}
+.surf-imgs {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.surf-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.surf-img img {
+    width: 300px;
+}
+
+/* ========================================== 
+    TABELAS
+    ========================================== */
+
+table {
+    margin: 20px;
+    background-color: rgb(39, 45, 72);
+    padding: 2px;
+}
+th {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+td {
+    background-color: #f9f9f9;
+    padding: 5px;
 }
