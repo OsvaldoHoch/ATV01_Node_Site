@@ -10,15 +10,27 @@ body {
  /* ==========================================
     NAVBAR                      
     ========================================== */
+.selected {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    pointer-events: none;
+    background-color: rgba(0,0,0,0.3); 
+}
+
 .navbar {
     position: relative;
     top: 0;
     width: 100%;
     background-color: rgb(39, 45, 72);
-    padding: 25px;
+    height: 70px;
     color: #fff;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .navbar-logo {
     position: relative;
@@ -27,8 +39,8 @@ body {
 }
 .navbar-logo img {
     position: absolute;
-    left: -25px;
-    top: -17.5px;
+    left: 10px;
+    top: -27.5px;
     width: 100px;
 }
 .navbar-itens {
@@ -36,13 +48,23 @@ body {
     flex-direction: row;
 }
 .navbar-itens li {
+    position: relative;
     list-style: none;
+    height: 70px;
+    display: flex;
+    align-items: center;
 }
 .navbar-itens a {
     width: 100%;
+    font-size: 15px;
     padding: 20px;
     text-decoration: none;
     color: #fff;
+
+    transition: all ease 0.3s;
+}
+.navbar-itens a:hover {
+    font-size: 17px;
 }
 
 /* ========================================== 
@@ -74,11 +96,17 @@ body {
 .header-content button {
     background-color: rgb(39, 45, 72);
     color: #fff;
-    border: 1px solid rgb(54, 71, 145);
+    border: 0 solid transparent;
     border-radius: 10px;
     padding: 10px 20px;
     width: 300px;
     font-size: 20px;
+
+    transition: all ease 0.3s;
+}
+.header-content button:hover {
+    background-color: rgb(43, 54, 102);
+    transform: scale(1.05);
 }
 
 
@@ -109,6 +137,7 @@ body {
     height: 300px;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.15);
 }
 .skate-img img {
     width: 300px;
@@ -140,6 +169,7 @@ body {
     height: 300px;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.15);
 }
 .surf-img img {
     width: 300px;
