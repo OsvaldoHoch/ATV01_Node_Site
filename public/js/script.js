@@ -1,19 +1,7 @@
 const select = (function() {
     let route = window.location.pathname;
+    route = route.slice(1);
 
-    console.log(route);
-
-    if(route == "/skates"){
-        let selected = document.getElementById("navbar-skates");
-        selected.classList.add('selected');
-    } else if (route == "/pranchas"){
-        let selected = document.getElementById("navbar-pranchas");
-        selected.classList.add('selected');
-    } else if (route == "/"){
-        let selected = document.getElementById("navbar-home");
-        selected.classList.add('selected');
-    } else if (route == "/patrocinados"){
-        let selected = document.getElementById("navbar-patrocinados");
-        selected.classList.add('selected');
-    }
+    const selected = document.getElementById(`navbar-${route}`);
+    selected.classList.add('selected');
 })();
